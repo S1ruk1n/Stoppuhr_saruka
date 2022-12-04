@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoppuhr</title>
+    <link type="text/javascript" href="/script/script.js">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<!-- Script mit Html verbinden -->
+<script type="text/javascript" src="/script/script.js"></script>
+<body>
+    <h1 >Stoppuhr</h1>
+  <br>
+  <!--  button anlegen für die Funktionen  -->
+    <button class="bcolor1" onclick="stoppuhr.start();">Start</button>
+    <button class="bcolor2" onclick="stoppuhr.stop();">Stop</button>
+    <button class="bcolor3" onclick="stoppuhr.clear();">Zurücksetzen</button>
+    <button class="bcolor4" onclick="stoppuhr.restart();">Neu starten</button>
+    <button class="bcolor5" onclick="stoppuhr.runde();">Runde</button>
+    <br><br>
+    <div>
+      <span id="tage">0</span> Tage,
+      <span id="stunden">0</span> Stunden,
+      <span id="minuten">0</span> Minuten,
+      <span id="sekunden">0</span> Sekunden und
+      <span id="msekunden">0</span> Hundertstel Sekunden.
+    </div>
+    <br>
+    <!-- Tabelle erstellen -->
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Tage</td>
+          <td>Stunden</td>
+          <td>Minuten</td>
+          <td>Sekunden</td>
+          <td>Hundertstel Sekunden</td>
+        </tr>
+      </thead>
+      <tbody id="runden"></tbody>
+      <tfoot>
+        <tr>
+          <td id="anzrunden" colspan="5">0 Runden</td>
+        </tr>
+      </tfoot>
+    </table>
+    
+</body>
+</html>
